@@ -61,7 +61,12 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`🚀 DandiyaKart Server running on port ${PORT}`);
-    console.log(`📱 Environment: ${process.env.NODE_ENV}`);
-});
+if (process.env.NODE_ENV !== 'production' || process.env.RENDER) {
+    app.listen(PORT, () => {
+        console.log(`🚀 DandiyaKart Server running on port ${PORT}`);
+        console.log(`📱 Environment: ${process.env.NODE_ENV}`);
+    });
+}
+
+// Export the app for Vercel serverless environment
+module.exports = app;
