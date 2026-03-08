@@ -5,17 +5,5 @@ export default defineConfig({
     plugins: [react()],
     server: {
         port: 5173,
-        proxy: {
-            '/api': {
-                target: 'https://dandiyakart-server.onrender.com',
-                changeOrigin: true,
-                secure: false,
-            },
-            '/uploads': {
-                target: 'https://dandiyakart-server.onrender.com',
-                changeOrigin: true,
-                secure: false,
-            },
-        },
     },
 });
