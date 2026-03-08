@@ -68,23 +68,6 @@ const LoginPage = () => {
                         Don't have an account?{' '}
                         <Link to="/register" className="text-primary-400 hover:text-primary-300 font-medium">Register here</Link>
                     </p>
-
-                    {/* Demo credentials */}
-                    <div className="mt-4 p-3 bg-gray-800/60 rounded-xl">
-                        <p className="text-xs text-gray-500 text-center mb-2 font-medium">Demo Credentials</p>
-                        <div className="grid grid-cols-2 gap-2 text-xs">
-                            <div className="bg-gray-700/50 rounded-lg p-2">
-                                <p className="text-gold-400 font-medium">Admin</p>
-                                <p className="text-gray-400">admin@dandiyakart.com</p>
-                                <p className="text-gray-400">admin123456</p>
-                            </div>
-                            <div className="bg-gray-700/50 rounded-lg p-2">
-                                <p className="text-primary-400 font-medium">User</p>
-                                <p className="text-gray-400">user@dandiyakart.com</p>
-                                <p className="text-gray-400">user123456</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
